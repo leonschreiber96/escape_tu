@@ -7,9 +7,8 @@ export default function StartGameIntent(gameSession: GameSession, query: QueryRe
    const responseBuilder = new ResponseBuilder();
 
    if (!gameSession.gameStarted) {
-      gameSession.gameStarted = true;
-      responseBuilder.addMessage("lol");
-      responseBuilder.addMessage("oke")
+      gameSession.gameStarted = true
+      responseBuilder.addMessage(getText("mensa_first_time"));
    } else {
       throw new Error("Game already started");
    }

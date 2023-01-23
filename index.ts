@@ -34,6 +34,7 @@ app.post('/', async (req, res) => {
    const request = res.locals.dfRequest;
    const query = res.locals.query;
 
+   // Get the query handler whose name matches the name of the incoming, recognized intent
    const intentHandler = intentMap[query.intent.displayName];
 
    if (intentHandler) {
