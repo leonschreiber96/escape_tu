@@ -1,1 +1,3 @@
-Hey, I am a text adventure on the TU Berlin campus. Do you want to start?
+<speak>
+   Hey, I am a text adventure on the <say-as interpret-as="characters">TU</say-as> Berlin campus. Do you want to start?
+</speak>

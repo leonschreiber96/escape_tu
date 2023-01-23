@@ -13,7 +13,7 @@ export class ResponseBuilder {
 
    public addContext(name: string, lifespanCount: number, parameters?: { [key: string]: string | number | boolean; }): ResponseBuilder {
       this.contexts.push({
-         name,
+         name: `projects/escape-tu-cslg/locations/global/agent/sessions/egal/contexts/${name}`,
          lifespanCount,
          parameters: parameters || {}
       });

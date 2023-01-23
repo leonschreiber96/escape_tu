@@ -12,7 +12,7 @@
       ]
    },
    {
-      "name": "PlaWi",
+      "name": "Student Café",
       "targets": [
          { "name": "Cafeteria", "available": true, "fail_msg": null },
          { "name": "Main Building", "available": true, "fail_msg": null },

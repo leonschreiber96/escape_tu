@@ -9,6 +9,11 @@ export default function StartGameIntent(gameSession: GameSession, query: QueryRe
    if (!gameSession.gameStarted) {
       gameSession.gameStarted = true
       responseBuilder.addMessage(getText("mensa_first_time"));
+      responseBuilder.addContext("asked_to_start", 0);
+      responseBuilder.addContext("asked_to_start_last_question", 0)
+      responseBuilder.addContext("asked_for_target", 99)
+
+      gameSession.helpText = "You're in the cafeteria. You wanted to get your laptop from the library, remember? Now you have to decide where to go: main building, library or student café?"
    } else {
       throw new Error("Game already started");
    }

@@ -6,6 +6,8 @@ import GameSession from "./gameSession";
 
 import GreetingIntent from "./intentHandlers/greetingIntent"
 import StartGameIntent from "./intentHandlers/startGameIntent";
+import GoToPlaceIntent from "./intentHandlers/goToPlaceIntent";
+import RepeatInstructionsIntent from "./intentHandlers/repeatInstructionsIntent";
 
 
 const app = express();
@@ -13,6 +15,8 @@ const app = express();
 const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) => DfResponse | undefined) } = {
    "0.0_greeting": GreetingIntent,
    "1.0_start_game": StartGameIntent,
+   "go_to_place": GoToPlaceIntent,
+   "repeat_instructions": RepeatInstructionsIntent
 }
 
 const gameSessions: GameSession[] = [];
@@ -30,7 +34,7 @@ app.use("/", (req, res, next) => {
    next();
 })
 
-app.post('/', async (req, res) => {
+app.post('/', async (_, res) => {
    const request = res.locals.dfRequest;
    const query = res.locals.query;
 
