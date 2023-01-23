@@ -1,41 +1,29 @@
-export default interface dfRequest {
+export default interface DfRequest {
    responseId: string;
-   queryResult: {
-      queryText: string;
-      parameters: any;
-      allRequiredParamsPresent: boolean;
-      fulfillmentText: string;
-      fulfillmentMessages: any[];
-      outputContexts: any[];
-      intent: {
-         name: string;
-         displayName: string;
-      };
-      intentDetectionConfidence: number;
-      languageCode: string;
-   };
-   originalDetectIntentRequest: {
-      source: string;
-      payload: {
-         data: {
-            message_id: string;
-            from: {
-               username: string;
-               id: string;
-               language_code: string;
-               first_name: string;
-            };
-            text: string;
-            chat: {
-               type: string;
-               id: string;
-            };
-            date: string;
-         };
-      };
-   };
+   queryResult: QueryResult;
+   originalDetectIntentRequest: any; // The payload provided by the chat service where the bot was reached
    session: string;
 }
+
+export interface QueryResult {
+   queryText: string;
+   parameters: any;
+   allRequiredParamsPresent: boolean;
+   fulfillmentText: string;
+   fulfillmentMessages: {
+      name: string;
+      lifespanCount: number;
+      parameters: any;
+   }[];
+   outputContexts: any[];
+   intent: {
+      name: string;
+      displayName: string;
+      endInteraction: boolean;
+   };
+   intentDetectionConfidence: number;
+   languageCode: string;
+};
 
 // {
 //   responseId: '6b6720f7-d83b-4e58-9b91-a20310b59354-1b6a75ff',

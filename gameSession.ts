@@ -1,7 +1,9 @@
 export default class GameSession {
-   private playerName: string | undefined = undefined;
+   public playerName: string | undefined = undefined;
+   public dialogFlowSessionId: string;
+   public gameStarted: boolean = false;
 
-   public setPlayerName(name: string) {
-      this.playerName = name;
+   constructor(dialogFlowSessionId: string) {
+      this.dialogFlowSessionId = dialogFlowSessionId;
    }
 }
