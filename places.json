@@ -1,0 +1,50 @@
+[
+   {
+      "name": "Cafeteria",
+      "targets": [
+         { "name": "PlaWi", "available": true, "fail_msg": null },
+         { "name": "Main Building", "available": true, "fail_msg": null },
+         { "name": "Library", "available": true, "fail_msg": null },
+         { "name": "Math Building", "available": false, "fail_msg": "Mathe Gebäude geht nicht von hier aus" }
+      ],
+      "actions": [
+         
+      ]
+   },
+   {
+      "name": "PlaWi",
+      "targets": [
+         { "name": "Cafeteria", "available": true, "fail_msg": null },
+         { "name": "Main Building", "available": true, "fail_msg": null },
+         { "name": "Library", "available": true, "fail_msg": null },
+         { "name": "Math Building", "available": false, "fail_msg": "Mathe Gebäude geht nicht von hier aus" }
+      ]
+   },
+   {
+      "name": "Main Building",
+      "targets": [
+         { "name": "Cafeteria", "available": true, "fail_msg": null },
+         { "name": "PlaWi", "available": true, "fail_msg": null },
+         { "name": "Library", "available": true, "fail_msg": null },
+         { "name": "Math Building", "available": false, "fail_msg": "Mathe Gebäude geht nicht von hier aus" }
+      ]
+   },
+   {
+      "name": "Library",
+      "targets": [
+         { "name": "Cafeteria", "available": true, "fail_msg": null },
+         { "name": "PlaWi", "available": true, "fail_msg": null },
+         { "name": "Main Building", "available": true, "fail_msg": null },
+         { "name": "Math Building", "available": false, "fail_msg": "Mathe Gebäude geht nicht von hier aus" }
+      ]
+   },
+   {
+      "name": "Math Building",
+      "targets": [
+         { "name": "Cafeteria", "available": true, "fail_msg": null },
+         { "name": "PlaWi", "available": true, "fail_msg": null },
+         { "name": "Main Building", "available": true, "fail_msg": null },
+         { "name": "Library", "available": true, "fail_msg": null }
+      ]
+   }
+]
