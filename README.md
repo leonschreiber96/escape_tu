@@ -19,7 +19,7 @@ import { QueryResult } from "../dfRequest";
 import DfResponse, { ResponseBuilder } from "../dfResponse";
 import getText from "../getText";
 
-export default function [Intent Display Name](gameSession: GameSession, query: QueryResult): DfResponse | undefined {
+export default function [FunctionName](gameSession: GameSession, query: QueryResult): DfResponse | undefined {
    const responseBuilder = new ResponseBuilder();
 
    // Write the intent handling here
@@ -28,7 +28,22 @@ export default function [Intent Display Name](gameSession: GameSession, query: Q
 }
 ```
 
-The file must be saved as **<i>[Intent Display Name].ts</i>**, with [Intent Display Name] referring to the exact display name of the intent in the DialogFlow console, so that it can be matched by the server and passed along accordingly.
+After that, you need to map the function to the intent matched by DialogFlow. For that, append a line to the `intentMap` in [`index.ts`](https://github.com/Snowfire01/escape_tu/blob/92211e0dc262ee2b2b3ecd0ab9278607b0e63ac2/index.ts). 
+It looks like this:
+
+```typescript
+import GreetingIntent from "./intentHandlers/greetingIntent"
+import StartGameIntent from "./intentHandlers/startGameIntent";
+// Import your intent handler here
+
+// [... Rest of the index.ts Code]
+
+const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) => DfResponse | undefined) } = {
+   "0.0_greeting": GreetingIntent,
+   "1.0_start_game": StartGameIntent,
+   // Write your mapping here
+}
+```
 
 ## Adding prewritten texts and SSML
 With the `getText(...)` function you can import texts from the `texts` folder. Import the function as shown in the IntentHandler code snippet above and use it like
