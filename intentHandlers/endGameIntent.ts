@@ -11,6 +11,7 @@ export default function endGameIntent(gameSession: GameSession, query: QueryResu
    const currentLocation = places.find(x => x.name === gameSession.currentLocation)
 
    responseBuilder.addMessage("Ending the game");
+   //com
    
 
    return responseBuilder.build();
