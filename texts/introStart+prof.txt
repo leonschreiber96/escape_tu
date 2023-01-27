@@ -1,0 +1,34 @@
+<speak>
+  <par>
+    <media xml:id="siren" soundLevel="-20dB" end="close_door.end" fadeInDur="2s" fadeOutDur="1500ms">
+      <audio src="https://actions.google.com/sounds/v1/emergency/ambulance_siren_distant.ogg"></audio>
+    </media> 
+    <media xml:id="footsteps" soundLevel="-1dB">
+      <audio src="https://actions.google.com/sounds/v1/foley/walk_gravel.ogg"></audio>
+    </media>
+    <media xml:id="close_door" soundLevel="-1dB" begin="footsteps.end" end="footsteps.end + 1500ms">
+      <audio src="https://actions.google.com/sounds/v1/doors/door_opening_closing.ogg"></audio>
+    </media>
+    <media xml:id="speech" begin="close_door.end + 1500ms">
+      <speak>
+         <voice name="en-US-Wavenet-B">
+            Hi there, good you are still alive!
+            You wouldn't believe how long it's been since I've seen a decent student, since I'm the last prof who remained. 
+            Over time, every faculty has fallen victim to WiWi students. There were rumors that the faculty four still had some surviving students. 
+            It's lucky that I found you... 
+
+            Oh you are looking for your laptop? It's in the library?
+
+            As far as I know, there are only four places, besides this cafeteria here, that you can still safely enter...
+         </voice>
+      </speak>
+    </media>
+    <media xml:id="choice" begin="speech.end + 1000ms">
+      <speak>
+         <voice name="en-US-Wavenet-C">
+           Do you want to go to the main building, student café or the library?
+         </voice>
+      </speak>
+   </media>
+  </par>
+</speak>
