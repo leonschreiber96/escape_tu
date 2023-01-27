@@ -5,6 +5,7 @@ import DfResponse from "./dfResponse";
 import GameSession from "./gameSession";
 
 import GreetingIntent from "./intentHandlers/greetingIntent"
+import endGameIntent from "./intentHandlers/endGameIntent"
 import StartGameIntent from "./intentHandlers/startGameIntent";
 import GoToPlaceIntent from "./intentHandlers/goToPlaceIntent";
 import RepeatInstructionsIntent from "./intentHandlers/repeatInstructionsIntent";
@@ -16,7 +17,9 @@ const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) =>
    "0.0_greeting": GreetingIntent,
    "1.0_start_game": StartGameIntent,
    "go_to_place": GoToPlaceIntent,
-   "repeat_instructions": RepeatInstructionsIntent
+   "repeat_instructions": RepeatInstructionsIntent,
+   "endGame": endGameIntent,
+
 }
 
 const gameSessions: GameSession[] = [];
