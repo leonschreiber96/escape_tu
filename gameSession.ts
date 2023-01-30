@@ -1,5 +1,6 @@
 import Place from "./model/place"
 
+
 export default class GameSession {
    public playerName: string | undefined = undefined;
    public dialogFlowSessionId: string;
@@ -7,9 +8,13 @@ export default class GameSession {
    public currentLocation: Place = Place.Cafeteria;
    public movingBetweenPlaces: boolean = false;
    public target: Place | undefined = undefined;
-   public cheatsheet: boolean = false;
-   public key: boolean = false;
-   public wentPlaces: Array<any>;
+   public visitedPlaces: Record<Place, boolean> = {
+      "Cafeteria": true,
+      "Library": false,
+      "Main Building": false,
+      "Math Building": false,
+      "Student Café": false
+   }
 
    public helpText: string = "";
 

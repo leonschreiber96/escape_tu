@@ -9,7 +9,6 @@ export default function GreetingIntent(gameSession: GameSession, query: QueryRes
    if (!gameSession.gameStarted) {
       responseBuilder.addMessage(getText("introduction"));
       responseBuilder.addContext("asked_to_start", 99);
-      responseBuilder.addContext("asked_to_start_last_question", 1)
 
       gameSession.helpText = getText("introduction")
    } else {

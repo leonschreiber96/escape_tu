@@ -12,11 +12,12 @@ export default function GoToPlaceIntent(gameSession: GameSession, query: QueryRe
 
    if (currentLocation?.name === query.parameters.building) {
       responseBuilder.addMessage("You are already here");
+      responseBuilder.addContext("go_to_place-followup", 0) // Deactivate the follow-up confirmation
    } else if (!currentLocation?.targets.some(x => x.name === query.parameters.building)) {
       responseBuilder.addMessage("You can't go there from here. Try again later!")
+      responseBuilder.addContext("go_to_place-followup", 0) // Deactivate the follow-up confirmation
    } else {
       responseBuilder.addMessage(`You sure you want to go to the ${query.parameters.building}?`)
-      responseBuilder.addContext("asked_for_target_confirmation", 1);
       responseBuilder.addContext("asked_for_target", 0);
       gameSession.movingBetweenPlaces = true;
       gameSession.target = query.parameters.building as Place;
