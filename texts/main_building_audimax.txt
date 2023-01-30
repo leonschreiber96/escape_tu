@@ -1,0 +1,3 @@
+The familiar Audimax is nearly completely dark. Only a recorded lecture echoes through the room.
+//text of a lecture
+Do you want to repeat the lecture or go back to the entrance of the main building?
