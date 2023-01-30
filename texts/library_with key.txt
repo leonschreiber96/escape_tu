@@ -1,6 +1,8 @@
-The cafe is empty but the zombies left a holy mess. You grab the key for the library and run over the campus.
-As you stand in front of the door, you carefully slide the key in the lock and open it. Luckily! Its time to get your laptop.
-You stand in the unpleasened light sorrounded by the wisdom of centuries.
-The only thing thats missing in those infinite bookshelves seems to be a book in your backpack. Maybe you should return it.
+You enter the cafe and find it empty, but the zombies have left a huge mess. 
+You quickly grab the key to the library and run across campus. 
+As you stand in front of the door, you insert the key into the lock and open it. 
+You sigh with relief as it's finally time to retrieve your laptop. 
+You stand in the dim light, surrounded by centuries of knowledge, but you realize that there's a book missing which is in your backpack. 
+Perhaps you should return it?
 
 Do you want to return the book or search for your laptop?

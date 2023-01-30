@@ -1,5 +1,5 @@
-"Maybe you aren't the one. 
-Try again:
+"Maybe you aren't the one after all.
+But one more try:
 If there are 4 apples and you take away 3, how many do you have?"
 
-Please say the Answer.
+State the answer.

@@ -1,6 +1,5 @@
-The familiar Audimax is nearly completely dark. Only a recorded lecture echoes through the room.
+The familiar lecture hall is nearly completely dark. Only a recorded lecture echoes through the room.
 
-//need to be shortened
 Bias-aware loss for training image and speech quality predsiction models from multiple datasets.
 The ground truth used for training image, video, or speech quality prediction models is based on the Mean Opinion Scores (MOS) obtained from subjective experiments. 
 Usually, it is necessary to conduct multiple experiments, mostly with different test participants, to obtain enough data to train quality models based on machine learning. 
