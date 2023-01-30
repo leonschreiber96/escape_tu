@@ -12,7 +12,7 @@ export default function GreetingIntent(gameSession: GameSession, query: QueryRes
 
       gameSession.helpText = getText("introduction")
    } else {
-      responseBuilder.addMessage(getText("greeting_after_start"));
+      responseBuilder.addMessage(gameSession.helpText);
    }
    
    return responseBuilder.build();

@@ -5,9 +5,11 @@ import DfResponse from "./dfResponse";
 import GameSession from "./gameSession";
 
 import GreetingIntent from "./intentHandlers/greetingIntent"
-import endGameIntent from "./intentHandlers/endGameIntent"
+import EndGameIntent from "./intentHandlers/endGameIntent"
 import StartGameIntent from "./intentHandlers/startGameIntent";
 import GoToPlaceIntent from "./intentHandlers/goToPlaceIntent";
+import GoToPlaceAbortIntent from "./intentHandlers/goToPlaceAbortIntent";
+import GoToPlaceConfirmIntent from "./intentHandlers/goToPlaceConfirmIntent";
 import RepeatInstructionsIntent from "./intentHandlers/repeatInstructionsIntent";
 
 
@@ -17,8 +19,10 @@ const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) =>
    "0.0_greeting": GreetingIntent,
    "1.0_start_game": StartGameIntent,
    "go_to_place": GoToPlaceIntent,
+   "go_to_place - yes": GoToPlaceConfirmIntent,
+   "go_to_place - no": GoToPlaceAbortIntent,
    "repeat_instructions": RepeatInstructionsIntent,
-   "endGame": endGameIntent,
+   "endGame": EndGameIntent,
    //"repeat_instructions"
    //"restart_game" 
    //"return_books" 

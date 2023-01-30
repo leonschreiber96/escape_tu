@@ -15,6 +15,7 @@ export default class GameSession {
       "Math Building": false,
       "Student Café": false
    }
+   public libraryUnlocked: boolean = false;
 
    public helpText: string = "";
 

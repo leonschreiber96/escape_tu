@@ -2,49 +2,143 @@
    {
       "name": "Cafeteria",
       "targets": [
-         { "name": "PlaWi", "available": true, "fail_msg": null },
-         { "name": "Main Building", "available": true, "fail_msg": null },
-         { "name": "Library", "available": true, "fail_msg": null },
-         { "name": "Math Building", "available": false, "fail_msg": "Mathe Gebäude geht nicht von hier aus" }
+         {
+            "name": "PlaWi",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Main Building",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Library",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Math Building",
+            "available": false,
+            "fail_msg": "Mathe Gebäude geht nicht von hier aus"
+         }
       ],
       "actions": [
-         
+         "Go to the main building, student café or the library"
       ]
    },
    {
       "name": "Student Café",
       "targets": [
-         { "name": "Cafeteria", "available": true, "fail_msg": null },
-         { "name": "Main Building", "available": true, "fail_msg": null },
-         { "name": "Library", "available": true, "fail_msg": null },
-         { "name": "Math Building", "available": false, "fail_msg": "Mathe Gebäude geht nicht von hier aus" }
+         {
+            "name": "Cafeteria",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Main Building",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Library",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Math Building",
+            "available": false,
+            "fail_msg": "Mathe Gebäude geht nicht von hier aus"
+         }
+      ],
+      "actions": [
+         "Go to the main building, cafeteria or the library"
       ]
    },
    {
       "name": "Main Building",
       "targets": [
-         { "name": "Cafeteria", "available": true, "fail_msg": null },
-         { "name": "PlaWi", "available": true, "fail_msg": null },
-         { "name": "Library", "available": true, "fail_msg": null },
-         { "name": "Math Building", "available": false, "fail_msg": "Mathe Gebäude geht nicht von hier aus" }
+         {
+            "name": "Cafeteria",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "PlaWi",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Library",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Math Building",
+            "available": false,
+            "fail_msg": "Mathe Gebäude geht nicht von hier aus"
+         }
+      ],
+      "actions": [
+         "Talk to the doorkeeper",
+         "Go to the Audimax"
       ]
    },
    {
       "name": "Library",
       "targets": [
-         { "name": "Cafeteria", "available": true, "fail_msg": null },
-         { "name": "PlaWi", "available": true, "fail_msg": null },
-         { "name": "Main Building", "available": true, "fail_msg": null },
-         { "name": "Math Building", "available": false, "fail_msg": "Mathe Gebäude geht nicht von hier aus" }
+         {
+            "name": "Cafeteria",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "PlaWi",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Main Building",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Math Building",
+            "available": false,
+            "fail_msg": "Mathe Gebäude geht nicht von hier aus"
+         }
+      ],
+      "actions": [
+         "Go to the main building, student café or the cafeteria"
       ]
    },
    {
       "name": "Math Building",
       "targets": [
-         { "name": "Cafeteria", "available": true, "fail_msg": null },
-         { "name": "PlaWi", "available": true, "fail_msg": null },
-         { "name": "Main Building", "available": true, "fail_msg": null },
-         { "name": "Library", "available": true, "fail_msg": null }
+         {
+            "name": "Cafeteria",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "PlaWi",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Main Building",
+            "available": true,
+            "fail_msg": null
+         },
+         {
+            "name": "Library",
+            "available": true,
+            "fail_msg": null
+         }
+      ],
+      "actions": [
+         "Search for a tutor",
+         "Talk to the cashier"
       ]
    }
 ]
