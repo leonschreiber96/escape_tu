@@ -15,6 +15,9 @@ export default function GoToPlaceIntent(gameSession: GameSession, query: QueryRe
    } else if (!currentLocation?.targets.some(x => x.name === query.parameters.building)) {
       responseBuilder.addMessage("You can't go there from here. Try again later!")
       responseBuilder.addContext("go_to_place-followup", 0) // Deactivate the follow-up confirmation
+   } else if (!currentLocation.targets.find(x => x.name === query.parameters.building)!.available) {
+      responseBuilder.addMessage(currentLocation.targets.find(x => x.name === query.parameters.building)!.fail_msg || "You can't go there from here.")
+      responseBuilder.addContext("go_to_place-followup", 0) // Deactivate the follow-up confirmation
    } else {
       responseBuilder.addMessage(`You sure you want to go to the ${query.parameters.building}?`)
       responseBuilder.addContext("asked_for_target", 0);

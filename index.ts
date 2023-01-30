@@ -14,6 +14,11 @@ import GoToPlaceConfirmIntent from "./intentHandlers/goToPlaceConfirmIntent";
 import RepeatInstructionsIntent from "./intentHandlers/repeatInstructionsIntent";
 import TalkPorterIntent from "./intentHandlers/talkPorterIntent";
 import BackToFoyerIntent from "./intentHandlers/backToFoyerIntent";
+import SeekTutorDeclineIntent from "./intentHandlers/seekTutorDeclineIntent";
+import SeekTutorIntent from "./intentHandlers/seekTutorIntent";
+import TalkLunchLadyIntent from "./intentHandlers/talkLunchLadyIntent";
+import RestartGameIntent from "./intentHandlers/restartGameIntent";
+import SolveRiddleIntent from "./intentHandlers/solveRiddleIntent";
 
 
 const app = express();
@@ -29,8 +34,13 @@ const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) =>
    "repeat_instructions": RepeatInstructionsIntent,
    "talk_porter - yes": TalkPorterIntent,
    "hear_lecture_again - yes": EnterAudimaxIntent,
-   "hear_lecture_again - no": BackToFoyerIntent
-
+   "hear_lecture_again - no": BackToFoyerIntent,
+   "seek_tutor - no": SeekTutorDeclineIntent,
+   "seek_tutor - yes": SeekTutorIntent,
+   "talk_lunchlady - yes": TalkLunchLadyIntent,
+   "talk_lunchlady - no": SeekTutorIntent,
+   "restart_game - yes": RestartGameIntent,
+   "solve riddle": SolveRiddleIntent
 }
 
 const gameSessions: GameSession[] = [];

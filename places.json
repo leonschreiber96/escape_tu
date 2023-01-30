@@ -3,7 +3,7 @@
       "name": "Cafeteria",
       "targets": [
          {
-            "name": "PlaWi",
+            "name": "Student Café",
             "available": true,
             "fail_msg": null
          },
@@ -75,7 +75,7 @@
          },
          {
             "name": "Math Building",
-            "available": false,
+            "available": true,
             "fail_msg": null
          }
       ],
