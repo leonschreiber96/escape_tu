@@ -1,0 +1,4 @@
+You entering the math building. On the left hand side you noticed a cashier. 
+But all in all the building seems empty. You could start searching for a tutor or talk to the cashier.
+
+Do you want to search a tutor or talk to the cashier?

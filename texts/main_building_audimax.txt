@@ -1,3 +1,11 @@
 The familiar Audimax is nearly completely dark. Only a recorded lecture echoes through the room.
-//text of a lecture
+
+//need to be shortened
+Bias-aware loss for training image and speech quality predsiction models from multiple datasets.
+The ground truth used for training image, video, or speech quality prediction models is based on the Mean Opinion Scores (MOS) obtained from subjective experiments. 
+Usually, it is necessary to conduct multiple experiments, mostly with different test participants, to obtain enough data to train quality models based on machine learning. 
+Each of these experiments is subject to an experiment-specific bias, where the rating of the same file may be substantially different in two experiments 
+(e.g. depending on the overall quality distribution). These different ratings for the same distortion levels confuse neural networks during training and lead to lower performance. 
+To overcome this problem, we propose a bias-aware loss function that estimates each dataset's biases during training with a linear function and considers it while optimising the network weights.
+
 Do you want to repeat the lecture or go back to the entrance of the main building?
