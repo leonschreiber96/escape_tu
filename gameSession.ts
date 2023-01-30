@@ -7,6 +7,9 @@ export default class GameSession {
    public currentLocation: Place = Place.Cafeteria;
    public movingBetweenPlaces: boolean = false;
    public target: Place | undefined = undefined;
+   public cheatsheet: boolean = false;
+   public key: boolean = false;
+   public wentPlaces: Array<any>;
 
    public helpText: string = "";
 
