@@ -19,6 +19,14 @@ const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) =>
    "go_to_place": GoToPlaceIntent,
    "repeat_instructions": RepeatInstructionsIntent,
    "endGame": endGameIntent,
+   //"repeat_instructions"
+   //"restart_game" 
+   //"return_books" 
+   //"seek_tutor" 
+   //"solve riddle"  
+   //"talk_lunchlady"
+   //"talk_porter"  
+   //"tear_cheatsheet"
 
 }
 
