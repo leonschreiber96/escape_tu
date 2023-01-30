@@ -65,18 +65,18 @@
          },
          {
             "name": "PlaWi",
-            "available": true,
-            "fail_msg": null
+            "available": false,
+            "fail_msg": "You can't go there from here."
          },
          {
             "name": "Library",
-            "available": true,
-            "fail_msg": null
+            "available": false,
+            "fail_msg": "You can't go there from here."
          },
          {
             "name": "Math Building",
             "available": false,
-            "fail_msg": "Mathe Gebäude geht nicht von hier aus"
+            "fail_msg": null
          }
       ],
       "actions": [

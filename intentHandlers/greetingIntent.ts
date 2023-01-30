@@ -2,6 +2,7 @@ import GameSession from "../gameSession";
 import { QueryResult } from "../dfRequest";
 import DfResponse, { ResponseBuilder } from "../dfResponse";
 import getText from "../getText";
+import Place from "../model/place";
 
 export default function GreetingIntent(gameSession: GameSession, query: QueryResult): DfResponse | undefined {
    const responseBuilder = new ResponseBuilder();

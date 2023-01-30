@@ -8,6 +8,9 @@ import Place from "../model/place";
 export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: QueryResult): DfResponse | undefined {
    const responseBuilder = new ResponseBuilder();
 
+   responseBuilder.addContext(gameSession.target!.replaceAll(" ", "_"), 99)
+   responseBuilder.addContext(gameSession.currentLocation.replaceAll(" ", "_"), 0)
+
    gameSession.currentLocation = gameSession.target!;
 
    if (!gameSession.visitedPlaces[gameSession.currentLocation]) {
@@ -28,7 +31,6 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
       .actions!
       .map((x, index) => `${index+1}: ${x}`).join(". ")}`
 
-   responseBuilder.addContext(gameSession.currentLocation.replaceAll(" ", "_"), 99)
    responseBuilder.addContext("go_to_place-followup", 0)
    return responseBuilder.build();
 }

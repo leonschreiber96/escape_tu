@@ -15,7 +15,11 @@ export interface QueryResult {
       lifespanCount: number;
       parameters: any;
    }[];
-   outputContexts: any[];
+   outputContexts: {
+      name: string,
+      lifespanCount: number,
+      parameters: { [key: string]: string | number | boolean }
+    }[];
    intent: {
       name: string;
       displayName: string;

@@ -6,11 +6,14 @@ import GameSession from "./gameSession";
 
 import GreetingIntent from "./intentHandlers/greetingIntent"
 import EndGameIntent from "./intentHandlers/endGameIntent"
+import EnterAudimaxIntent from "./intentHandlers/enterAudimaxIntent";
 import StartGameIntent from "./intentHandlers/startGameIntent";
 import GoToPlaceIntent from "./intentHandlers/goToPlaceIntent";
 import GoToPlaceAbortIntent from "./intentHandlers/goToPlaceAbortIntent";
 import GoToPlaceConfirmIntent from "./intentHandlers/goToPlaceConfirmIntent";
 import RepeatInstructionsIntent from "./intentHandlers/repeatInstructionsIntent";
+import TalkPorterIntent from "./intentHandlers/talkPorterIntent";
+import BackToFoyerIntent from "./intentHandlers/backToFoyerIntent";
 
 
 const app = express();
@@ -18,19 +21,15 @@ const app = express();
 const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) => DfResponse | undefined) } = {
    "0.0_greeting": GreetingIntent,
    "1.0_start_game": StartGameIntent,
+   "endGame": EndGameIntent,
+   "talk_porter - no": EnterAudimaxIntent,
    "go_to_place": GoToPlaceIntent,
    "go_to_place - yes": GoToPlaceConfirmIntent,
    "go_to_place - no": GoToPlaceAbortIntent,
    "repeat_instructions": RepeatInstructionsIntent,
-   "endGame": EndGameIntent,
-   //"repeat_instructions"
-   //"restart_game" 
-   //"return_books" 
-   //"seek_tutor" 
-   //"solve riddle"  
-   //"talk_lunchlady"
-   //"talk_porter"  
-   //"tear_cheatsheet"
+   "talk_porter - yes": TalkPorterIntent,
+   "hear_lecture_again - yes": EnterAudimaxIntent,
+   "hear_lecture_again - no": BackToFoyerIntent
 
 }
 
