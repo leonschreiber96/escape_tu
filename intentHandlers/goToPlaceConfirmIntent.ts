@@ -34,10 +34,14 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
       responseBuilder.addMessage(buildingText)
    }
 
-   gameSession.helpText = `You are at the ${gameSession.currentLocation}. Your possible actions are 
+   if (gameSession.currentLocation === Place.StudentCafe && gameSession.hasCheatSheet) {
+      gameSession.helpText = "You noticed the zombies are going crazy about your cheat sheet. Your options are throwing it at them or tearing it apart."
+   } else {
+      gameSession.helpText = `You are at the ${gameSession.currentLocation}. Your possible actions are 
       ${places.find(x => x.name === gameSession.currentLocation)!
       .actions!
       .map((x, index) => `${index + 1}: ${x}`).join(". ")}`
+   }
 
    responseBuilder.addContext("go_to_place-followup", 0)
    responseBuilder.addContext("asked_for_target", 99)

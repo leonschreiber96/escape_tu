@@ -64,7 +64,7 @@
             "fail_msg": null
          },
          {
-            "name": "PlaWi",
+            "name": "Student Café",
             "available": false,
             "fail_msg": "You can't go there from here."
          },
@@ -93,7 +93,7 @@
             "fail_msg": null
          },
          {
-            "name": "PlaWi",
+            "name": "Student Café",
             "available": true,
             "fail_msg": null
          },
@@ -121,7 +121,7 @@
             "fail_msg": null
          },
          {
-            "name": "PlaWi",
+            "name": "Student Café",
             "available": true,
             "fail_msg": null
          },
