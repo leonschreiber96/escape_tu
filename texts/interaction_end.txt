@@ -8,8 +8,6 @@
             <voice name="en-US-Wavenet-B">
             Bummer. Maybe later though.
 
-
-
             </voice>
         </speak>
      </media>

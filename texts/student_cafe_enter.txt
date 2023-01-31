@@ -7,8 +7,8 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
-                The WiWi zombies are rampaging. 
-                They want to destroy the sacred cheat sheet and run out of the student cafe to escape.
+                The WiWi zombies are going insane from the mathematical formulas and are trying to escape their personal calculation hell 
+                by running out of the student café.
                 You have the option to enter at your own risk. Do you want to?
             </voice>
         </speak>
