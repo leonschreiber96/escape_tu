@@ -6,15 +6,13 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
-            "You are standing in front of the library. Did you really think it would be that easy? 
-            I locked the Bib beforehand specifically. Keep playing!"                 
-
-            </voice>
-
-            <voice>
-            The library is locked.
+            You are standing in front of a locked library. 
+            "Did you really think it would be that easy? I specifically locked the library beforehand. Keep playing!"                  
             Where would you rather go?  Main building, cafeteria or the student café?
             </voice>
+
+    
+    
 
         </speak>
      </media>

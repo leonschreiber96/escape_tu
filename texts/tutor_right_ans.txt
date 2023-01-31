@@ -21,7 +21,7 @@ Cafeteria, main building, student cafe or library?
 
             <voice>
                 Where do you want to got next?
-                Cafeteria, main building, student cafe or library?
+                Cafeteria, main building, student cafe or library?          
             </voice>
         </speak>
      </media>

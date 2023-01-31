@@ -6,7 +6,7 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
-            Bummer. Maybe later though"
+            Bummer. Maybe later though.
 
 
 

@@ -6,10 +6,10 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
-               You enter the math building. You spot a lunch lady on the left side. 
-               But all in all the building appears to be empty.
+              You enter the math building. You spot a lunch lady on the left side. 
+              But all in all the building appears to be empty.
 
-               Do you want to talk to the lunch lady? If not you will look for a tutor.
+              Do you want to talk to the lunch lady? If not you will look for a tutor.
             </voice>
         </speak>
      </media>

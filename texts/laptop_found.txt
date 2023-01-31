@@ -10,7 +10,6 @@
                 You grasp your laptop bag tightly, trying to calm your shivering hands.
 
                 You can leave this frightening campus behind and finally return to your normal life. Will you?
-
             </voice>
         </speak>
      </media>

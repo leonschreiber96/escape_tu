@@ -7,10 +7,10 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
-              You peek through the window into the café. On the foosball table, you see the key to the library.
-              The zombies are still there and the only thing that could distract them are cheat sheets.
+             You peek through the window into the café. On the foosball table, you see the key to the library.
+             The zombies are still there and the only thing that could distract them are cheat sheets.
 
-              Where would you like to go next? The library, cafeteria, or main building?
+             Where would you like to go next? The library, cafeteria, or main building?
             </voice>
         </speak>
      </media>

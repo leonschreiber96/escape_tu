@@ -6,9 +6,10 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
+            
             You decide to stay a little longer. 
-            But suddenly you hear a tinny voice as a steel behemoth builds up in front of you: "Return your books! 
-            You're already 5 months past your deadline. You are EXMATRICULATED!" GAME OVER!!!
+            All of a sudden you hear a metallic voice as a steel behemoth builds up in front of you: 
+            "Return your books! You're already 5 months past your deadline. You are EXMATRICULATED!" GAME OVER!!!
 
             Do you want to restart?
             </voice>

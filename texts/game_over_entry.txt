@@ -6,10 +6,8 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
-            The zombies are quickly finished with the cheatsheet. 
-            However, their rage is still far from dissipated.
-            Out in the open, you are at their mercy without protection.
-            They surround you. It's over. GAME OVER!!!
+                The zombies quickly finish the cheat sheet, but their anger remains. 
+                Exposed and unprotected, you are quickly surrounded. Game over.
 
             Do you want to restart?
             </voice>

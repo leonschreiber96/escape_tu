@@ -7,9 +7,9 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
-            You're standing in the entrance of the main building. To the right you're seeing a cone of light illuminating the floor, originating from the Audimax.
-            To the left you're seeing a slim shape sitting in the familiar small porter cabin. A doorkeeper!
-            Do you want to enter the Audimax or talk to the doorkeeper?
+            You stand in the main building entrance. To the right you're seeing a cone of light illuminating the floor, originating from a lecture hall.
+            To the left you see a slim shape sitting in the familiar small porter cabin. A doorkeeper!
+            Do you want to enter the lecture hall or talk to the person?
 
 
             </voice>
