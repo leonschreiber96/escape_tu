@@ -11,27 +11,33 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
    responseBuilder.addContext(gameSession.target?.replaceAll(" ", "_") || "", 99)
    responseBuilder.addContext(gameSession.currentLocation.replaceAll(" ", "_"), 0)
 
+   if (!gameSession.target) {
+      responseBuilder.addMessage("Sorry, where did you want to go again? The stress of a zombie apocalypse makes you a bit forgetful");
+      responseBuilder.addContext("go_to_place-followup", 0)
+      responseBuilder.addContext("asked_for_target", 99)
+   }
+
    gameSession.currentLocation = gameSession.target!;
 
    if (!gameSession.visitedPlaces[gameSession.currentLocation]) {
       gameSession.visitedPlaces[gameSession.currentLocation] = true;
-      let buildingText = getText(`intro ${gameSession.currentLocation}`);
+      let buildingText = `intro ${gameSession.currentLocation}`;
 
       if (gameSession.currentLocation === Place.StudentCafe) {
          buildingText += ` ${gameSession.hasCheatSheet ? "unlocked" : "locked"}`
          if (gameSession.hasCheatSheet) responseBuilder.addContext("Cheat_Sheet_Decision", 99);
       }
 
-      responseBuilder.addMessage(buildingText);
+      responseBuilder.addMessage(getText(buildingText));
    } else {
-      let buildingText = getText(`return ${gameSession.currentLocation}`)
+      let buildingText = `return ${gameSession.currentLocation}`
 
       if (gameSession.currentLocation === Place.StudentCafe) {
          buildingText += ` ${gameSession.hasCheatSheet ? "unlocked" : "locked"}`
          if (gameSession.hasCheatSheet) responseBuilder.addContext("Cheat_Sheet_Decision", 99);
       }
 
-      responseBuilder.addMessage(buildingText)
+      responseBuilder.addMessage(getText(buildingText))
    }
 
    if (gameSession.currentLocation === Place.StudentCafe && gameSession.hasCheatSheet) {
@@ -39,11 +45,12 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
    } else {
       gameSession.helpText = `You are at the ${gameSession.currentLocation}. Your possible actions are 
       ${places.find(x => x.name === gameSession.currentLocation)!
-      .actions!
-      .map((x, index) => `${index + 1}: ${x}`).join(". ")}`
+         .actions!
+         .map((x, index) => `${index + 1}: ${x}`).join(". ")}`
+      
+      responseBuilder.addContext("asked_for_target", 99)
    }
 
    responseBuilder.addContext("go_to_place-followup", 0)
-   responseBuilder.addContext("asked_for_target", 99)
    return responseBuilder.build();
 }
