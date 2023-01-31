@@ -1,10 +1,3 @@
-"Heureka! You are the chosen one!"
-
-The tutor hands you a sheet full of mathematical formulas.
-
-Where do you want to got next?
-Cafeteria, main building, student cafe or library?
-
 <speak>
     <par>
     <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">

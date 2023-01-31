@@ -15,8 +15,6 @@
 
                 Do you want to return the book or search for your laptop?
 
-
-
             </voice>
         </speak>
      </media>

@@ -10,7 +10,7 @@
                 "You can try the abandoned Math building. Maybe you'll find some real help there.
                 Or the cafeteria, if you don't want to listen to the advice of a good man."
 
-                Do you want to go to the Math building or the cafeteria?
+                Do you want to go to the math building or the cafeteria?
 
             </voice>
         </speak>
