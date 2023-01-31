@@ -15,15 +15,21 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
 
    if (!gameSession.visitedPlaces[gameSession.currentLocation]) {
       gameSession.visitedPlaces[gameSession.currentLocation] = true;
-      const buildingText = getText(`intro ${gameSession.currentLocation}`);
+      let buildingText = getText(`intro ${gameSession.currentLocation}`);
+
+      if (gameSession.currentLocation === Place.StudentCafe) {
+         buildingText += ` ${gameSession.hasCheatSheet ? "unlocked" : "locked"}`
+      }
+
       responseBuilder.addMessage(buildingText);
-   } else if (gameSession.currentLocation !== Place.StudentCafe) {
-      const buildingText = getText(`return ${gameSession.currentLocation}`)
-      responseBuilder.addMessage(buildingText)
    } else {
-      const lockState = gameSession.libraryUnlocked ? "unlocked" : "locked"
-      const buildingText = getText(`return ${gameSession.currentLocation} ${lockState}`)
-      responseBuilder.addMessage(buildingText);
+      let buildingText = getText(`return ${gameSession.currentLocation}`)
+
+      if (gameSession.currentLocation === Place.StudentCafe) {
+         buildingText += ` ${gameSession.hasCheatSheet ? "unlocked" : "locked"}`
+      }
+
+      responseBuilder.addMessage(buildingText)
    }
 
    gameSession.helpText = `You are at the ${gameSession.currentLocation}. Your possible actions are 

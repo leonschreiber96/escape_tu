@@ -10,12 +10,7 @@
             "Did you really think it would be that easy? I specifically locked the library beforehand. Keep playing!"                  
             Where would you rather go?  Main building, cafeteria or the student café?
             </voice>
-
-    
-    
-
         </speak>
      </media>
-
     </par>
 </speak>

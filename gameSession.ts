@@ -16,7 +16,7 @@ export default class GameSession {
       "Student Café": false
    }
    public libraryUnlocked: boolean = false;
-   public hasCheatSheet: boolean = true;
+   public hasCheatSheet: boolean = false;
 
    public helpText: string = "";
 
