@@ -57,8 +57,8 @@ const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) =>
    "tear_cheat_sheet": TearCheatSheetIntent,
    "go_home - yes": GoHomeIntent,
    "go_home - no": ExploreMoreIntent,
-   "seek_laptop - yes": SeekLaptopIntent,
-   "seek_laptop - no": ReturnBooksIntent,
+   "seek_laptop": SeekLaptopIntent,
+   "return_books": ReturnBooksIntent,
 }
 
 const gameSessions: GameSession[] = [];
