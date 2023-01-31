@@ -19,6 +19,16 @@ import SeekTutorIntent from "./intentHandlers/seekTutorIntent";
 import TalkLunchLadyIntent from "./intentHandlers/talkLunchLadyIntent";
 import RestartGameIntent from "./intentHandlers/restartGameIntent";
 import SolveRiddleIntent from "./intentHandlers/solveRiddleIntent";
+import EnterStudentCafeDeclineIntent from "./intentHandlers/enterStudentCafeDeclineIntent";
+import EnterStudentCafeIntent from "./intentHandlers/enterStudentCafeIntent";
+import FeedCheatSheetIntent from "./intentHandlers/feedCheatSheetIntent";
+import GoHomeIntent from "./intentHandlers/goHomeIntent";
+import SeekLaptopIntent from "./intentHandlers/seekLaptop";
+import ReturnBooksIntent from "./intentHandlers/returnBooksIntent";
+import TearCheatSheetIntent from "./intentHandlers/tearCheatSheetIntent";
+import ExploreMoreIntent from "./intentHandlers/exploreMoreIntent";
+
+
 
 
 const app = express();
@@ -40,7 +50,15 @@ const intentMap: { [key: string]: ((session: GameSession, query: QueryResult) =>
    "talk_lunchlady - yes": TalkLunchLadyIntent,
    "talk_lunchlady - no": SeekTutorIntent,
    "restart_game - yes": RestartGameIntent,
-   "solve riddle": SolveRiddleIntent
+   "solve riddle": SolveRiddleIntent,
+   "enter_plawi - no": EnterStudentCafeDeclineIntent,
+   "enter_plawi - yes": EnterStudentCafeIntent,
+   "feed_cheat_sheet": FeedCheatSheetIntent,
+   "tear_cheat_sheet": TearCheatSheetIntent,
+   "go_home - yes": GoHomeIntent,
+   "go_home - no": ExploreMoreIntent,
+   "seek_laptop - yes": SeekLaptopIntent,
+   "seek_laptop - no": ReturnBooksIntent,
 }
 
 const gameSessions: GameSession[] = [];
