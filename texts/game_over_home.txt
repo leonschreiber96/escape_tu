@@ -10,6 +10,7 @@
             But suddenly you hear a tinny voice as a steel behemoth builds up in front of you: "Return your books! 
             You're already 5 months past your deadline. You are EXMATRICULATED!" GAME OVER!!!
 
+            Do you want to restart?
             </voice>
         </speak>
      </media>

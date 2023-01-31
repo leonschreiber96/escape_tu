@@ -12,6 +12,8 @@
             <voice>
                 A steel behemoth builds up in front of you: "You're already 5 months past your deadline. 
                 You are EXMATRICULATED!"GAME OVER!!!
+
+                Do you want to restart?
             </voice>
         </speak>
      </media>

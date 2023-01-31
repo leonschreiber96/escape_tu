@@ -11,6 +11,7 @@
            Without the cheat sheet, you are defenseless and at their mercy. 
            GAME OVER!!!
 
+           Do you want to restart? 
             </voice>
         </speak>
      </media>

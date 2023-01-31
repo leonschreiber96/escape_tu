@@ -8,9 +8,10 @@
             <voice name="en-US-Wavenet-B">
             The zombies are quickly finished with the cheatsheet. 
             However, their rage is still far from dissipated.
-             Out in the open, you are at their mercy without protection.
+            Out in the open, you are at their mercy without protection.
             They surround you. It's over. GAME OVER!!!
 
+            Do you want to restart?
             </voice>
         </speak>
      </media>
