@@ -19,6 +19,7 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
 
       if (gameSession.currentLocation === Place.StudentCafe) {
          buildingText += ` ${gameSession.hasCheatSheet ? "unlocked" : "locked"}`
+         if (gameSession.hasCheatSheet) responseBuilder.addContext("Cheat_Sheet_Decision", 99);
       }
 
       responseBuilder.addMessage(buildingText);
@@ -27,6 +28,7 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
 
       if (gameSession.currentLocation === Place.StudentCafe) {
          buildingText += ` ${gameSession.hasCheatSheet ? "unlocked" : "locked"}`
+         if (gameSession.hasCheatSheet) responseBuilder.addContext("Cheat_Sheet_Decision", 99);
       }
 
       responseBuilder.addMessage(buildingText)
