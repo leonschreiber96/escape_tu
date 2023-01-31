@@ -1,0 +1,22 @@
+
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+                You peek through the window into the café. On the foosball table, you see the key to the library.
+                However, great danger lurks in the café! 
+                A pack of inflation-radiated WiWi zombies squats in the center of the room, performing an endless accounting calculation. 
+                The only thing that could distract them are cheat sheets which you have found after a lengthy search
+
+                The zombies start to sense the aroma of mathematical formulas. One by one they turn their attention towards you.
+                Do you want to destroy the cheat sheet or throw it at the zombies?
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>
