@@ -1,3 +1,18 @@
-The WiWi zombies are rampaging. 
-They want to destroy the sacred cheat sheet and run out of the student cafe to escape.
-You have the option to enter at your own risk. Do you want to?
+
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+                The WiWi zombies are rampaging. 
+                They want to destroy the sacred cheat sheet and run out of the student cafe to escape.
+                You have the option to enter at your own risk. Do you want to?
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>

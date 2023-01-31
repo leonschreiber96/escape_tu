@@ -1,5 +1,19 @@
-You gather your things and quickly leave campus, free from further disturbances. 
-Finally you can leave this odyssey behind.
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+            You pick up your belongings and head home as fast as you can.
+            You leave the campus without disturbance and can leave behind this odyssey.
 
-Thank you for playing the game. 
-Do you want to restart?
+            Thank you for playing the game. 
+            Do you want to restart the game?
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>

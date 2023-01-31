@@ -1,6 +1,21 @@
-The zombies quickly finish the cheat sheet, but their anger remains. 
-Exposed and unprotected, you are quickly surrounded. GAME OVER!!!
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+            The zombies are quickly finished with the cheatsheet. 
+            However, their rage is still far from dissipated.
+             Out in the open, you are at their mercy without protection.
+            They surround you. It's over. GAME OVER!!!
 
-Do you want to restart?
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>
 
 

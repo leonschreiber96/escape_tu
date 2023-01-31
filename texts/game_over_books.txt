@@ -6,11 +6,12 @@
     <media xml:id="speech">
         <speak>
             <voice name="en-US-Wavenet-B">
-           You are tearing up the cheat sheet. 
-           The zombies' attention is still focused on you. 
-           Without the cheat sheet, you are defenseless and at their mercy. 
-           GAME OVER!!!
+                A tinny voice sounds: "Finally you have found me!" 
+            </voice>
 
+            <voice>
+                A steel behemoth builds up in front of you: "You're already 5 months past your deadline. 
+                You are EXMATRICULATED!"GAME OVER!!!
             </voice>
         </speak>
      </media>

@@ -1,1 +1,18 @@
-Bummer. Maybe later though
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+            Bummer. Maybe later though"
+
+
+
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>

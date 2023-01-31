@@ -1,1 +1,19 @@
-Hey! We're in the middle of the game, talking to me will destroy the immersion. If you need help, just ask me for it.
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+            Hey! We're in the middle of the game, talking to me will destroy the immersion. 
+            If you need help, just ask me for it.
+
+
+
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>

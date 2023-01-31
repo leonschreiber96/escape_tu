@@ -1,8 +1,25 @@
-You enter the cafe and find it empty, but the zombies have left a huge mess. 
-You quickly grab the key to the library and run across campus. 
-As you stand in front of the door, you insert the key into the lock and open it. 
-You sigh with relief as it's finally time to retrieve your laptop. 
-You stand in the dim light, surrounded by centuries of knowledge, but you realize that there's a book missing which is in your backpack. 
-Perhaps you should return it?
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+                You enter the cafe and find it empty, but the zombies have left a huge mess. 
+                You quickly grab the key to the library and run across campus. 
+                As you stand in front of the door, you insert the key into the lock and open it. 
+                You sigh with relief as it's finally time to retrieve your laptop. 
+                You stand in the dim light, surrounded by centuries of knowledge, but you realize that there's a book missing which is in your backpack. 
+                Perhaps you should return it?
 
-Do you want to return the book or search for your laptop?
+                Do you want to return the book or search for your laptop?
+
+
+
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>

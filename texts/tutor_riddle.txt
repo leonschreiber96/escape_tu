@@ -1,10 +1,24 @@
-You stroll through the Math building as a dark figure rises from the shadows near the elevators. 
-A hood covers his face and he speaks:
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+                You stroll through the Math building as a dark figure rises from the shadows near the elevators. 
+                A hood covers his face and he speaks:
 
-"I can't believe my eyes! 
-For eons, I've been the guardian of the Math building and protector of the cheat sheets. 
-Are you a worthy heir to my legacy? Prove your worth by solving this riddle:
+                "I can't believe my eyes! 
+                For eons, I've been the guardian of the Math building and protector of the cheat sheets. 
+                Are you a worthy heir to my legacy? Prove your worth by solving this riddle:
 
-If you have 4 apples and you take away 3, how many do you have?"
+                If you have 4 apples and you take away 3, how many do you have?"
 
-State the answer.
+                State the answer.
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>

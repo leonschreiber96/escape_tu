@@ -1,5 +1,21 @@
-"Gday. What are you looking for, young and insignifcant student? Cheat sheets, I suppose?" he says with a smirk. 
-"You can try the abandoned Math building. Maybe you'll find some real help there.
-Or the cafeteria, if you don't want to listen to the advice of a good man."
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+                "Gday. What are you looking for, young and insignifcant student? Cheat sheets, I suppose?" he says with a smirk. 
+                "You can try the abandoned Math building. Maybe you'll find some real help there.
+                Or the cafeteria, if you don't want to listen to the advice of a good man."
 
-Do you want to go to the Math building or the cafeteria?
+                Do you want to go to the Math building or the cafeteria?
+
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>
+

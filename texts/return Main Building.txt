@@ -1,3 +1,21 @@
-You stand in the main building entrance. To the right you're seeing a cone of light illuminating the floor, originating from a lecture hall.
-To the left you see a slim shape sitting in the familiar small porter cabin. A doorkeeper!
-Do you want to enter the lecture hall or talk to the person?
+
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+                You stand in the main building entrance. To the right you're seeing a cone of light illuminating the floor, originating from a lecture hall.
+                To the left you see a slim shape sitting in the familiar small porter cabin. A doorkeeper!
+                Do you want to enter the lecture hall or talk to the person?        
+
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>
+
+

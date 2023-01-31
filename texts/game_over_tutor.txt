@@ -1,5 +1,21 @@
-You are walking out of the math building when you see a shadow out of the corner of your eye. 
-A stray zombie has spotted you. Accepting your foolish decision, you close your eyes as you hear the zombie running towards you.
-GAME OVER!!!
 
-Do you want to restart?
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+            You walk out of the math building. 
+            Out of the corner of your eye you see a shadow...A stray zombie has spotted you!
+            You close your eyes and accept your foolish decision while you hear the zombie running towards you. GAME OVER!!!
+        
+            Do you want to restart?
+
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>

@@ -1,3 +1,20 @@
 <speak>
-   Hey, I am a text adventure on the <say-as interpret-as="characters">TU</say-as> Berlin campus. Do you want to start?
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+               <speak>
+                  Hey, I am a text adventure on the <say-as interpret-as="characters">TU</say-as> Berlin campus. Do you want to start?
+               </speak>               
+
+            </voice>
+
+
+        </speak>
+     </media>
+
+    </par>
 </speak>

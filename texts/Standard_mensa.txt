@@ -1,2 +1,16 @@
-You are standing in the cafeteria again. 
-Nothing new happened. Where do you wanna go? To the library, student café or to the main building?
+<speak>
+    <par>
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    </media>
+    <media xml:id="speech">
+        <speak>
+            <voice name="en-US-Wavenet-B">
+                You are standing in the cafeteria again. 
+                Nothing new happened. Where do you wanna go? To the library, student café or to the main building?
+            </voice>
+        </speak>
+     </media>
+
+    </par>
+</speak>
