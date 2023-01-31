@@ -10,7 +10,7 @@
             You are walking out of the math building when you see a shadow out of the corner of your eye. 
             A stray zombie has spotted you. Accepting your foolish decision, you close your eyes as you hear the zombie running towards you.
             GAME OVER!!!
-        
+
             Do you want to restart?
 
             </voice>

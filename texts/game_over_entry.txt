@@ -7,9 +7,9 @@
         <speak>
             <voice name="en-US-Wavenet-B">
                 The zombies quickly finish the cheat sheet, but their anger remains. 
-                Exposed and unprotected, you are quickly surrounded. Game over.
+                Exposed and unprotected, you are quickly surrounded. GAME OVER!!!
 
-            Do you want to restart?
+                Do you want to restart?
             </voice>
         </speak>
      </media>

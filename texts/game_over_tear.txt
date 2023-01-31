@@ -10,7 +10,7 @@
                 The zombies' attention is still focused on you. 
                 Without the cheat sheet, you are defenceless and at their mercy. GAME OVER!!!
 
-           Do you want to restart? 
+                Do you want to restart?
             </voice>
         </speak>
      </media>
