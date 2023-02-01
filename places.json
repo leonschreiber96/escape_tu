@@ -20,7 +20,7 @@
          {
             "name": "Math Building",
             "available": false,
-            "fail_msg": "Mathe Gebäude geht nicht von hier aus"
+            "fail_msg": "You can't go there from here."
          }
       ],
       "actions": [
@@ -48,7 +48,7 @@
          {
             "name": "Math Building",
             "available": false,
-            "fail_msg": "Mathe Gebäude geht nicht von hier aus"
+            "fail_msg": "You can't go there from here."
          }
       ],
       "actions": [
@@ -60,23 +60,23 @@
       "targets": [
          {
             "name": "Cafeteria",
-            "available": true,
-            "fail_msg": null
+            "available": false,
+            "fail_msg": "An unexplainable feeling that something important is located here creeps up to you...Better not leave this place now."
          },
          {
             "name": "Student Café",
             "available": false,
-            "fail_msg": "You can't go there from here."
+            "fail_msg": "An unexplainable feeling that something important is located here creeps up to you... Better not leave this place now."
          },
          {
             "name": "Library",
             "available": false,
-            "fail_msg": "You can't go there from here."
+            "fail_msg": "An unexplainable feeling that something important is located here creeps up to you... Better not leave this place now."
          },
          {
             "name": "Math Building",
-            "available": true,
-            "fail_msg": null
+            "available": false,
+            "fail_msg": "An unexplainable feeling that something important is located here creeps up to you... Better not leave this place now."
          }
       ],
       "actions": [
@@ -105,7 +105,7 @@
          {
             "name": "Math Building",
             "available": false,
-            "fail_msg": "Mathe Gebäude geht nicht von hier aus"
+            "fail_msg": "You can't go there from here."
          }
       ],
       "actions": [
