@@ -6,7 +6,7 @@ import getText from "../getText";
 export default function RestartGameIntent(gameSession: GameSession, query: QueryResult): DfResponse | undefined {
    const responseBuilder = new ResponseBuilder();
 
-   gameSession = new GameSession(gameSession.dialogFlowSessionId);
+   gameSession.reset();
 
    if (!gameSession.gameStarted) {
       gameSession.gameStarted = true

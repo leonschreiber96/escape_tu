@@ -2,7 +2,6 @@ import Place from "./model/place"
 
 
 export default class GameSession {
-   public playerName: string | undefined = undefined;
    public dialogFlowSessionId: string;
    public gameStarted: boolean = false;
    public currentLocation: Place = Place.Cafeteria;
@@ -22,5 +21,20 @@ export default class GameSession {
 
    constructor(dialogFlowSessionId: string) {
       this.dialogFlowSessionId = dialogFlowSessionId;
+   }
+
+   public reset() {
+      this.gameStarted = false;
+      this.currentLocation = Place.Cafeteria;
+      this.movingBetweenPlaces = false;
+      this.target = undefined;
+      this.visitedPlaces.Cafeteria = true;
+      this.visitedPlaces.Library = false;
+      this.visitedPlaces["Main Building"] = false;
+      this.visitedPlaces["Math Building"] = false;
+      this.visitedPlaces["Student Café"] = false;
+      this.libraryUnlocked = false;
+      this.hasCheatSheet = false;
+      this.helpText = "You're in the cafeteria. You wanted to get your laptop from the library, remember? Now you have to decide where to go: main building, library or student café?"
    }
 }
