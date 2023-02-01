@@ -8,13 +8,13 @@ import Place from "../model/place";
 export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: QueryResult): DfResponse | undefined {
    const responseBuilder = new ResponseBuilder();
 
-   responseBuilder.addContext(gameSession.target?.replaceAll(" ", "_") || "", 99)
-   responseBuilder.addContext(gameSession.currentLocation.replaceAll(" ", "_"), 0)
+   responseBuilder.addContext(gameSession.target?.replaceAll(" ", "_") || "", 99, gameSession.dialogFlowSessionId)
+   responseBuilder.addContext(gameSession.currentLocation.replaceAll(" ", "_"), 0, gameSession.dialogFlowSessionId)
 
    if (!gameSession.target) {
       responseBuilder.addMessage("Sorry, where did you want to go again? The stress of a zombie apocalypse makes you a bit forgetful");
-      responseBuilder.addContext("go_to_place-followup", 0)
-      responseBuilder.addContext("asked_for_target", 99)
+      responseBuilder.addContext("go_to_place-followup", 0, gameSession.dialogFlowSessionId)
+      responseBuilder.addContext("asked_for_target", 99, gameSession.dialogFlowSessionId)
    }
 
    gameSession.currentLocation = gameSession.target!;
@@ -25,7 +25,7 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
 
       if (gameSession.currentLocation === Place.StudentCafe) {
          buildingText += ` ${gameSession.hasCheatSheet ? "unlocked" : "locked"}`
-         if (gameSession.hasCheatSheet) responseBuilder.addContext("Cheat_Sheet_Decision", 99);
+         if (gameSession.hasCheatSheet) responseBuilder.addContext("Cheat_Sheet_Decision", 99, gameSession.dialogFlowSessionId);
       }
 
       responseBuilder.addMessage(getText(buildingText));
@@ -34,7 +34,7 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
 
       if (gameSession.currentLocation === Place.StudentCafe) {
          buildingText += ` ${gameSession.hasCheatSheet ? "unlocked" : "locked"}`
-         if (gameSession.hasCheatSheet) responseBuilder.addContext("Cheat_Sheet_Decision", 99);
+         if (gameSession.hasCheatSheet) responseBuilder.addContext("Cheat_Sheet_Decision", 99, gameSession.dialogFlowSessionId);
       }
 
       responseBuilder.addMessage(getText(buildingText))
@@ -48,9 +48,9 @@ export default function GoToPlaceConfirmIntent(gameSession: GameSession, query: 
          .actions!
          .map((x, index) => `${index + 1}: ${x}`).join(". ")}`
       
-      responseBuilder.addContext("asked_for_target", 99)
+      responseBuilder.addContext("asked_for_target", 99, gameSession.dialogFlowSessionId)
    }
 
-   responseBuilder.addContext("go_to_place-followup", 0)
+   responseBuilder.addContext("go_to_place-followup", 0, gameSession.dialogFlowSessionId)
    return responseBuilder.build();
 }

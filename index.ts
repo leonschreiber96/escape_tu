@@ -70,7 +70,7 @@ app.use("/", (req, res, next) => {
 
    console.log(query.intent.displayName, query.intent.endInteraction ? "-> end interaction" : "");
    console.log("   Params:", query.parameters);
-   console.log("   Contexts:", query.outputContexts.map(context => context.name + "(" + context.lifespanCount + ")"));
+   console.log("   Contexts:", query.outputContexts.map(context => context.name + " (" + context.lifespanCount + ")"));
    res.locals.dfRequest = request;
    res.locals.query = query   
    next();

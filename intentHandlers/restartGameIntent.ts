@@ -11,9 +11,9 @@ export default function RestartGameIntent(gameSession: GameSession, query: Query
    if (!gameSession.gameStarted) {
       gameSession.gameStarted = true
       responseBuilder.addMessage(getText("intro Cafeteria"));
-      responseBuilder.addContext("asked_to_start", 0);
-      responseBuilder.addContext("asked_for_target", 99);
-      responseBuilder.addContext("Cafeteria", 99)
+      responseBuilder.addContext("asked_to_start", 0, gameSession.dialogFlowSessionId);
+      responseBuilder.addContext("asked_for_target", 99, gameSession.dialogFlowSessionId);
+      responseBuilder.addContext("Cafeteria", 99, gameSession.dialogFlowSessionId)
 
       gameSession.helpText = "You're in the cafeteria. You wanted to get your laptop from the library, remember? Now you have to decide where to go: main building, library or student café?"
    } else {

@@ -11,9 +11,9 @@ export class ResponseBuilder {
       return this;
    }
 
-   public addContext(name: string, lifespanCount: number, parameters?: { [key: string]: string | number | boolean; }): ResponseBuilder {
+   public addContext(name: string, lifespanCount: number, sessionId: string, parameters?: { [key: string]: string | number | boolean; }): ResponseBuilder {
       this.contexts.push({
-         name: `projects/escape-tu-cslg/locations/global/agent/sessions/egal/contexts/${name}`,
+         name: `${sessionId}/contexts/${name}`,
          lifespanCount,
          parameters: parameters || {}
       });

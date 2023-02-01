@@ -18,7 +18,7 @@ export default function GoToPlaceAbortIntent(gameSession: GameSession, query: Qu
          .actions!
          .map((x, index) => `${index + 1}: ${x}`).join(". ")}`
       
-      responseBuilder.addContext("asked_for_target", 99)
+      responseBuilder.addContext("asked_for_target", 99, gameSession.dialogFlowSessionId)
    }
 
    responseBuilder.addMessage(gameSession.helpText);

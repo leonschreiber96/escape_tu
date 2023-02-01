@@ -9,8 +9,8 @@ export default function SolveRiddleIntent(gameSession: GameSession, query: Query
    if (query.parameters.number === 3) {
       responseBuilder.addMessage(getText("tutor_right_ans"));
       gameSession.hasCheatSheet = true;
-      responseBuilder.addContext("asked_for_target", 99);
-      responseBuilder.addContext("Search_Tutor", 0);
+      responseBuilder.addContext("asked_for_target", 99, gameSession.dialogFlowSessionId);
+      responseBuilder.addContext("Search_Tutor", 0, gameSession.dialogFlowSessionId);
    }
    else responseBuilder.addMessage(getText("tutor_wrong_ans"))
 
