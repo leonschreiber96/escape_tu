@@ -9,22 +9,25 @@ export default function GoToPlaceIntent(gameSession: GameSession, query: QueryRe
 
    const currentLocation = places.find(x => x.name === gameSession.currentLocation)
 
+   const acceptMove = () => {
+      responseBuilder.addMessage(`You sure you want to go to the ${query.parameters.building}?`)
+      responseBuilder.addContext("asked_for_target", 0);
+      gameSession.movingBetweenPlaces = true;
+      gameSession.target = query.parameters.building as Place;
+      gameSession.helpText = `You wanted to go to the ${gameSession.target} and I asked you if you are really sure. Question still stands...`
+   }
+
    if (currentLocation?.name === query.parameters.building) {
       responseBuilder.addMessage("You are already here");
       responseBuilder.addContext("go_to_place-followup", 0) // Deactivate the follow-up confirmation
    } else if (query.outputContexts.find(x => x.name.endsWith("Porter_Talk"))) {
-      if (!gameSession.hasCheatSheet && (currentLocation?.name === Place.MathBuilding || currentLocation?.name === Place.Cafeteria) {
-         responseBuilder.addMessage(`You sure you want to go to the ${query.parameters.building}?`)
-         responseBuilder.addContext("asked_for_target", 0);
-         gameSession.movingBetweenPlaces = true;
-         gameSession.target = query.parameters.building as Place;
-         gameSession.helpText = `You wanted to go to the ${gameSession.target} and I asked you if you are really sure. Question still stands...`
-      } else if (gameSession.hasCheatSheet && (currentLocation?.name === Place.StudentCafe || currentLocation?.name === Place.Cafeteria) {
-         responseBuilder.addMessage(`You sure you want to go to the ${query.parameters.building}?`)
-         responseBuilder.addContext("asked_for_target", 0);
-         gameSession.movingBetweenPlaces = true;
-         gameSession.target = query.parameters.building as Place;
-         gameSession.helpText = `You wanted to go to the ${gameSession.target} and I asked you if you are really sure. Question still stands...`
+      if (!gameSession.hasCheatSheet && (currentLocation?.name === Place.MathBuilding || currentLocation?.name === Place.Cafeteria)) {
+         acceptMove();
+      } else if (gameSession.hasCheatSheet && (currentLocation?.name === Place.StudentCafe || currentLocation?.name === Place.Cafeteria)) {
+         acceptMove();
+      } else {
+         responseBuilder.addMessage("No, not there...")
+         responseBuilder.addContext("go_to_place-followup", 0) // Deactivate the follow-up confirmation
       }
    } else if (!currentLocation?.targets.some(x => x.name === query.parameters.building)) {
       responseBuilder.addMessage("You can't go there from here. Try again later!")
@@ -33,11 +36,7 @@ export default function GoToPlaceIntent(gameSession: GameSession, query: QueryRe
       responseBuilder.addMessage(currentLocation.targets.find(x => x.name === query.parameters.building)!.fail_msg || "You can't go there from here.")
       responseBuilder.addContext("go_to_place-followup", 0) // Deactivate the follow-up confirmation
    } else {
-      responseBuilder.addMessage(`You sure you want to go to the ${query.parameters.building}?`)
-      responseBuilder.addContext("asked_for_target", 0);
-      gameSession.movingBetweenPlaces = true;
-      gameSession.target = query.parameters.building as Place;
-      gameSession.helpText = `You wanted to go to the ${gameSession.target} and I asked you if you are really sure. Question still stands...`
+      acceptMove();
    }
 
    return responseBuilder.build();
