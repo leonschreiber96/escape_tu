@@ -16,7 +16,7 @@
                 You stand in the main building entrance. To the right you're seeing a cone of light illuminating the floor, originating from a lecture hall.
                 To the left you see a slim shape sitting in the familiar small porter cabin. 
 
-                A doorkeeper!
+            
                 
                </prosody>
                

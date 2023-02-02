@@ -20,11 +20,13 @@
                </prosody>
             </voice>
 
-            <emphasis level="moderate">GAME OVER!!!</emphasis>
+            
 
 
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+
+                    GAME OVER!!
                 
                     Do you want to restart?
 
