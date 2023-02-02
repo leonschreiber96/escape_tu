@@ -4,11 +4,11 @@
         <audio src="https://www.sndup.net/ty2r/d"> </audio>
     </media>
 
-    <media xml:id="finally" begin="2.5s">
+    <media xml:id="finally" begin="3s">
         <audio src="https://www.sndup.net/qy2w/d"> </audio>
     </media>
 
-    <media xml:id="Exmatriculated" begin="finally.end+4s">
+    <media xml:id="Exmatriculated" begin="finally.end+3s">
         <audio src="https://www.sndup.net/w2xp/d"> </audio>
     </media>
 
@@ -25,7 +25,7 @@
         </speak>
      </media>
 
-    <media xml:id="speech1" begin="speech.end+1.5s">
+    <media xml:id="speech1" begin="speech.end+3s">
         <speak>
            
             <voice name="en-US-Wavenet-C" >
@@ -38,7 +38,7 @@
         </speak>
      </media>
 
-     <media xml:id="speech2" begin="speech1.end+2.5s">
+     <media xml:id="speech2" begin="speech1.end+4.5s">
         <speak>
 
             <voice name="en-US-Wavenet-C">
