@@ -21,7 +21,7 @@
         <speak>
            <voice name="en-US-Wavenet-G">
 
-               <prosody rate="medium" pitch="-1.3st" volume="-4db">
+               <prosody rate="fast" pitch="-1.3st" volume="-4db">
 
                 Bias-aware loss for training image and speech quality predsiction models from multiple datasets.
                 The ground truth used for training image, video, or speech quality prediction models is based on the Mean Opinion Scores (MOS) obtained from subjective experiments. 
@@ -37,7 +37,7 @@
      </media>
 
 
-      <media xml:id="speech">
+      <media xml:id="speech1" begin="lecture.end+0.5s">
         <speak>
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">

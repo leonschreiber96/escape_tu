@@ -23,7 +23,7 @@
      </media>
 
 
-    <media xml:id="speech">
+    <media xml:id="speech" begin="lunch_lady.end+0.5s">
         <speak>
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">

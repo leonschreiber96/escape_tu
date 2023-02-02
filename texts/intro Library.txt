@@ -3,11 +3,12 @@
     <media xml:id="standard_2">
         <audio src="https://sndup.net/29fh/d" soundLevel="10dB"> </audio>
     </media>
-    <media xml:id="Door_2">
-        <audio src="https://sndup.net/q8kq/d" soundlevel="-5db"> </audio>
+
+    <media xml:id="Door_locked">
+        <audio src="https://sndup.net/w7rc/d"> </audio>
     </media>
 
-    <media xml:id="speech" begin="Door_2.end +1s">
+    <media xml:id="speech" begin="Door_locked.end+ 0.5s">
         <speak>
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">
