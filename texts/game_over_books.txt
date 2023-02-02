@@ -1,6 +1,6 @@
 <speak>
     <par>
-    <media xml:id="standard_sound" soundLevel="10dB">
+    <media xml:id="standard_sound" soundLevel="20dB">
         <audio src="https://www.sndup.net/ty2r/d"> </audio>
     </media>
 
@@ -22,19 +22,24 @@
 
             </voice>
 
-            <break time="3s"/>
+        </speak>
+     </media>
 
+    <media xml:id="speech1" begin="speech.end+1.5s">
+        <speak>
            
-                <voice name="en-US-Wavenet-C">
+            <voice name="en-US-Wavenet-C" >
                 <prosody rate="medium" pitch="+1st" volume="-5.0dB">
                         A steel behemoth builds up in front of you. 
                 </prosody>
 
-                </voice>
-           
+            </voice>
 
-            <break time="2s"/>
+        </speak>
+     </media>
 
+     <media xml:id="speech2" begin="speech1.end+2.5s">
+        <speak>
 
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">

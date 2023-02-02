@@ -2,7 +2,7 @@
 <speak>
     <par>
     <media xml:id="standard_2">
-        <audio src="https://sndup.net/29fh/d"> </audio>
+        <audio src="https://sndup.net/29fh/d" soundLevel="10dB"> </audio>
     </media>
 
     <media xml:id="Door_5">

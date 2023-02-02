@@ -1,6 +1,6 @@
 <speak>
     <par>
-    <media xml:id="standard_sound" soundLevel="8dB">
+    <media xml:id="standard_sound" soundLevel="20dB">
         <audio src="https://www.sndup.net/ty2r/d"> </audio>
     </media>
 
@@ -16,12 +16,11 @@
                 You tear up the cheat sheet. 
                 The zombies' attention is still focused on you. 
                 Without the cheat sheet, you are defenceless and at their mercy. 
+
+                GAME OVER!!!
  
                </prosody>
             </voice>
-
-            <emphasis level="moderate">GAME OVER!!!</emphasis>
-
 
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">

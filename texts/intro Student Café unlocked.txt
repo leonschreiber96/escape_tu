@@ -5,7 +5,7 @@
         <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
 
-    <media xml:id="zombies" begin="3s" soundLevel="-8db">
+    <media xml:id="zombies" begin="3s">
         <audio src="https://www.sndup.net/nsbp/d" soundLevel="-30dB"> </audio>
     </media>
 
