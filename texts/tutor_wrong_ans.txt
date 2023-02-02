@@ -1,17 +1,25 @@
 
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_2">
+        <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
-    <media xml:id="speech">
+
+
+    
+      <media xml:id="tutor">
         <speak>
-            <voice name="en-US-Wavenet-B">
-                "Maybe you aren't the one after all.
-                But one more try:
-                If there are 4 apples and you take away 3, how many do you have?"
+            <voice name="en-AU-Wavenet-D">
+               <prosody rate="medium" pitch="+2.4st" volume="-2.0dB">
+                
+                   "Maybe you aren't the one after all.
+                    But one more try:
+                    If there are 4 apples and you take away 3, how many do you have?"
 
                 State the answer.
+
+               </prosody>
+
             </voice>
         </speak>
      </media>

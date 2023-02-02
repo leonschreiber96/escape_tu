@@ -1,16 +1,28 @@
 
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_2" >
+        <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
+
+    <media xml:id="zombies">
+        <audio src="https://www.sndup.net/nsbp/d" soundLevel="-30dB"> </audio>
+    </media>
+
     <media xml:id="speech">
         <speak>
-            <voice name="en-US-Wavenet-B">
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-3.0dB">
+            
                 The WiWi zombies are going insane from the mathematical formulas and are trying to escape their personal calculation hell 
                 by running out of the student café.
                 You have the option to enter at your own risk. Do you want to?
+                
+
+               </prosody>
+
             </voice>
+ 
         </speak>
      </media>
 

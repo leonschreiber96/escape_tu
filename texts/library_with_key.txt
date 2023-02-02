@@ -1,11 +1,22 @@
+
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_2">
+        <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
-    <media xml:id="speech">
+
+    <media xml:id="Door_5">
+        <audio src="https://sndup.net/xddb/d" soundLevel="40db"> </audio>
+    </media>
+
+    <media xml:id="Door_2" begin="17s">
+        <audio src="https://sndup.net/q8kq/d" soundlevel="-5db"> </audio>
+    </media>
+
+    <media xml:id="speech" begin="Door_5.end +1s">
         <speak>
-            <voice name="en-US-Wavenet-B">
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
                 You enter the cafe and find it empty, but the zombies have left a huge mess. 
                 You quickly grab the key to the library and run across campus. 
                 As you stand in front of the door, you insert the key into the lock and open it. 
@@ -14,6 +25,8 @@
                 Perhaps you should return it?
 
                 Do you want to return the book or search for your laptop?
+
+               </prosody>
 
             </voice>
         </speak>

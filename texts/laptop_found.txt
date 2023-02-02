@@ -1,15 +1,21 @@
+
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_2">
+        <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
+
     <media xml:id="speech">
         <speak>
-            <voice name="en-US-Wavenet-B">
-                You've finally found your laptop after nearly endlessly searching through the dark bookshelves. 
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+                 You've finally found your laptop after nearly endlessly searching through the dark bookshelves. 
                 You grasp your laptop bag tightly, trying to calm your shivering hands.
 
                 You can leave this frightening campus behind and finally return to your normal life. Will you?
+
+               </prosody>
+
             </voice>
         </speak>
      </media>

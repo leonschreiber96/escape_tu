@@ -1,12 +1,16 @@
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_2">
+        <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
+
     <media xml:id="speech">
         <speak>
-            <voice name="en-US-Wavenet-B">
-            Bummer. Maybe later though.
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+                Bummer. Maybe later though.
+
+               </prosody>
 
             </voice>
         </speak>

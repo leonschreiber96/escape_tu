@@ -1,16 +1,48 @@
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg"> </audio>
+    <media xml:id="standard_sound" soundLevel="10dB">
+        <audio src="https://www.sndup.net/ty2r/d"> </audio>
     </media>
+
+    <media xml:id="finally" begin="2.5s">
+        <audio src="https://www.sndup.net/qy2w/d"> </audio>
+    </media>
+
+    <media xml:id="Exmatriculated" begin="finally.end+4s">
+        <audio src="https://www.sndup.net/w2xp/d"> </audio>
+    </media>
+
+
     <media xml:id="speech">
         <speak>
-            <voice name="en-US-Wavenet-B">
-                A metallic voice shrills: "Finally you have found me!" 
-                A steel behemoth builds up in front of you. "You are already 5 months past your deadline. 
-                You are EXMATRICULATED!" GAME OVER!!!
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+                    A mighty, metallic voice shrills:
+               </prosody>
 
-                Do you want to restart?
+            </voice>
+
+            <break time="3s"/>
+
+           
+                <voice name="en-US-Wavenet-C">
+                <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+                        A steel behemoth builds up in front of you. 
+                </prosody>
+
+                </voice>
+           
+
+            <break time="2s"/>
+
+
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+
+
+                    Do you want to restart?
+               </prosody>
+
             </voice>
         </speak>
      </media>

@@ -1,16 +1,57 @@
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_2">
+        <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
-    <media xml:id="speech">
+
+    <media xml:id="doorkeeper1">
         <speak>
-            <voice name="en-US-Wavenet-B">
-                "Gday. What are you looking for, young and insignifcant student? Cheat sheets, I suppose?" he says with a smirk. 
-                "You can try the abandoned Math building. Maybe you'll find some real help there.
-                Or the cafeteria, if you don't want to listen to the advice of a good man."
+            <voice name="en-AU-Standard-B">
+               <prosody rate="medium" pitch="-10.0st" volume="-3.0dB">
+
+                "Geday. What are you looking for, young and insignifcant student? Cheat sheets, I suppose?"
+
+               </prosody>
+
+            </voice>
+        </speak>
+     </media>
+
+    <media xml:id="speech1" begin="doorkeeper1.end">
+        <speak>
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+
+                he says with a smirk. 
+
+               </prosody>
+
+            </voice>
+        </speak>
+     </media>
+
+    <media xml:id="doorkeeper2" begin="speech1.end">
+        <speak>
+            <voice name="en-AU-Standard-B">
+               <prosody rate="medium" pitch="-10.0st" volume="-3.0dB">
+
+                 "You can try the abandoned Math building. Maybe you'll find some real help there.
+                 Or the cafeteria, if you don't want to listen to the advice of a good man."
+
+               </prosody>
+
+            </voice>
+        </speak>
+     </media>
+
+    <media xml:id="speech2" begin="doorkeeper2.end">
+        <speak>
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
 
                 Do you want to go to the math building or the cafeteria?
+
+               </prosody>
 
             </voice>
         </speak>
@@ -18,4 +59,5 @@
 
     </par>
 </speak>
+
 

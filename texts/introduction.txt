@@ -1,15 +1,17 @@
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
+    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="15s">
         <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
     </media>
+
     <media xml:id="speech">
         <speak>
-            <voice name="en-US-Wavenet-B">
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
                <speak>
                   Hey, I am a text adventure on the <say-as interpret-as="characters">TU</say-as> Berlin campus. Do you want to start?
                </speak>               
-
+                </prosody>
             </voice>
 
 
@@ -18,3 +20,4 @@
 
     </par>
 </speak>
+

@@ -1,14 +1,21 @@
-
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_2">
+        <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
-    <media xml:id="speech">
+
+    <media xml:id="Door_locked">
+        <audio src="https://sndup.net/w7rc/d"> </audio>
+    </media>
+
+    <media xml:id="speech" begin="Door_locked.end+ 0.5s">
         <speak>
-            <voice name="en-US-Wavenet-B">
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
                 The library is still locked.
-                Where do you want to go? Main building, cafeteria or the student café?            
+                Where do you want to go? Main building, cafeteria or the student café?   
+
+               </prosody>
 
             </voice>
         </speak>
@@ -16,5 +23,7 @@
 
     </par>
 </speak>
+
+
 
 

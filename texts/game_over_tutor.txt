@@ -1,18 +1,34 @@
-
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_sound" soundLevel="8dB">
+        <audio src="https://www.sndup.net/ty2r/d"> </audio>
     </media>
+
+    <media xml:id="zombies">
+        <audio src="https://www.sndup.net/nsbp/d" soundLevel="-30dB"> </audio>
+    </media>
+
     <media xml:id="speech">
         <speak>
-            <voice name="en-US-Wavenet-B">
-            You are walking out of the math building when you suddenly see a shadow our of the corner of your eye. 
-            A stray zombie spotted you. Accepting your foolish decision, you close your eyes as you hear the zombie running towards you.
-            GAME OVER!!!
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+                
+                You are walking out of the math building when you suddenly see a shadow our of the corner of your eye. 
+                A stray zombie spotted you. Accepting your foolish decision, you close your eyes as you hear the zombie running towards you.
+                
+                
+               </prosody>
+            </voice>
 
-            Do you want to restart?
+            <emphasis level="moderate">GAME OVER!!!</emphasis>
 
+
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+                
+                    Do you want to restart?
+
+               </prosody>
             </voice>
         </speak>
      </media>

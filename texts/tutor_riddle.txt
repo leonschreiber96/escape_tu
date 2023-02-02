@@ -1,21 +1,39 @@
 <speak>
     <par>
-    <media xml:id="grillen_jungle" fadeInDur="5s" fadeOutDur="9s">
-        <audio src="https://actions.google.com/sounds/v1/ambiences/jungle_atmosphere_night.ogg" clipEnd="10s"> </audio>
+    <media xml:id="standard_2">
+        <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
-    <media xml:id="speech">
+
+    <media xml:id="speech1">
         <speak>
-            <voice name="en-US-Wavenet-B">
-                You stroll through the Math building as a dark figure rises from the shadows near the elevators. 
+            <voice name="en-US-Wavenet-C">
+               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
+                 You stroll through the Math building as a dark figure rises from the shadows near the elevators. 
                 A hood covers his face and he speaks:
 
-                "I can't believe my eyes! 
+               </prosody>
+
+            </voice>
+        </speak>
+     </media>
+
+      <media xml:id="speech" begin="speech1.end">
+        <speak>
+            <voice name="en-AU-Wavenet-D">
+               <prosody rate="medium" pitch="+2.4st" volume="-5.0dB">
+                
+                "I can't believe my eyes!! 
                 For eons, I've been the guardian of the Math building and protector of the cheat sheets. 
-                Are you a worthy heir to my legacy? Prove your worth by solving this riddle:
+                Are you a worthy heir to my legacy? Prove your worth by solving this riddle:....
+
+
 
                 If you have 4 apples and you take away 3, how many do you have?"
 
                 State the answer.
+
+               </prosody>
+
             </voice>
         </speak>
      </media>
