@@ -19,7 +19,7 @@
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">
                 You enter the cafe and find it empty, but the zombies have left a huge mess. 
                 You quickly grab the key to the library and run across campus. 
-                As you stand in front of the door, you insert the key into the lock and open it. 
+                As you stand in front of the door to the library, you insert the key into the lock and open it. 
                 You sigh with relief as it's finally time to retrieve your laptop. 
                 You stand in the dim light, surrounded by centuries of knowledge, but you realize that there's a book missing which is in your backpack. 
                 Perhaps you should return it?
