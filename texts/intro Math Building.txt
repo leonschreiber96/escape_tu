@@ -4,7 +4,11 @@
         <audio src="https://sndup.net/29fh/d" soundLevel="10dB"> </audio>
     </media>
 
-    <media xml:id="speech">
+    <media xml:id="Door_3">
+        <audio src="https://sndup.net/m577/d" soundlevel="-5db"> </audio>
+    </media>
+
+    <media xml:id="speech" begin="Door_3.end +1s">
         <speak>
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">
