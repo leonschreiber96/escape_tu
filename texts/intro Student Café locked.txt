@@ -6,7 +6,7 @@
 
 
     <media xml:id="zombies" begin="3s" soundLevel="-8db">
-        <audio src="https://www.sndup.net/nsbp/d" soundLevel="-30dB"> </audio>
+        <audio src="https://www.sndup.net/nsbp/d" soundLevel="-10dB"> </audio>
     </media>
 
     <media xml:id="speech">

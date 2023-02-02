@@ -14,7 +14,7 @@
          <voice name="en-US-Wavenet-G">
 
           <prosody rate="medium" pitch="-1.3st" volume="-4db">
-            Hi there! good, you are still alive!
+            Hi there! good, you are still alive! I'm prof Lasting
             You wouldn't believe how long it's been since I've seen a decent student, since I'm the last prof who remained. 
             Over time, every faculty has fallen victim to WiWi students. There were rumors that the faculty four still had some surviving students. 
             It's lucky that I found you... 
