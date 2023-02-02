@@ -14,22 +14,15 @@
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">
             
                 You are standing in front of a locked library. 
-                "Did you really think it would be that easy? I specifically locked the library beforehand. Keep playing!"                  
+                "Did you really think it would be that easy? I specifically locked the library beforehand. Keep playing!" 
+
+                Where would you rather go?  Main building, cafeteria or the student café?                 
                 
 
                </prosody>
 
             </voice>
     
-
-            <voice name="en-US-Wavenet-C">
-               <prosody rate="medium" pitch="+1st" volume="-5.0dB">
-                
-                Where would you rather go?  Main building, cafeteria or the student café?
-
-               </prosody>
-
-            </voice>
         </speak>
      </media>
 
