@@ -85,6 +85,7 @@ app.post('/', async (_, res) => {
 
    if (intentHandler) {
       var gameSession = gameSessions.find(session => session.dialogFlowSessionId === request.session);
+      console.log(gameSession)
       if (!gameSession) {
          gameSession = new GameSession(request.session);
          gameSessions.push(gameSession);
