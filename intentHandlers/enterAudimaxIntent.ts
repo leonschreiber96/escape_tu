@@ -8,7 +8,7 @@ export default function EnterAudimaxIntent(gameSession: GameSession, query: Quer
    const responseBuilder = new ResponseBuilder();
 
    responseBuilder.addMessage(getText("main_building_audimax"));
-   gameSession.helpText = "You just listened to a lexture in the Audimax. Wanna do it again?"
+   gameSession.helpText = "You just listened to a lexture in the lecture hall. Wanna do it again?"
    responseBuilder.addContext("asked_for_target", 0, gameSession.dialogFlowSessionId) // So that you can't just leave the Audimax with the "go_to_place" intent
 
    return responseBuilder.build();

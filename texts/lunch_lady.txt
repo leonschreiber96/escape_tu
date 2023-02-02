@@ -9,7 +9,7 @@
             <voice name="en-GB-Wavenet-F">
                <prosody rate="medium" pitch="-11.6st" volume="-5.0dB">
 
-                Once again, the cutlery was not placed next plates, and the napkins were left on the tray.
+                Once again, the cutlery was not placed next to the plates, and the napkins were left on the tray.
                 I don't understand why these students don't get it.
                 And this tutor, in particular, is a problem.
                 For ages he's been coming here at exactly 12 o' clock for lunch and I keep clearing his stuff away.

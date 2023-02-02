@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import DfRequest, { QueryResult } from "./dfRequest";
 import DfResponse from "./dfResponse";
 import GameSession from "./gameSession";
-
+ 
 import GreetingIntent from "./intentHandlers/greetingIntent"
 import EndGameIntent from "./intentHandlers/endGameIntent"
 import EnterAudimaxIntent from "./intentHandlers/enterAudimaxIntent";

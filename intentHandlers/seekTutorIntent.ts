@@ -7,7 +7,7 @@ export default function SeekTutorIntent(gameSession: GameSession, query: QueryRe
    const responseBuilder = new ResponseBuilder();
 
    responseBuilder.addMessage(getText("tutor_riddle"))
-   gameSession.helpText = "The tutor gave you this riddle to solve: If you have 4 apples and you take away 3, how many do you have?"
+   gameSession.helpText = "The tutor gave you this riddle to solve: If there are 4 apples and you take away 3, how many do you have?"
 
    return responseBuilder.build();
 }

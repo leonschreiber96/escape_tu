@@ -24,7 +24,7 @@
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">
                  The tutor hands you a sheet full of mathematical formulas.
-                 Where do you want to got next?
+                 Where do you want to go next?
                  Cafeteria, main building, student cafe or library? 
 
                </prosody>

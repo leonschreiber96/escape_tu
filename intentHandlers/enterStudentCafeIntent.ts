@@ -7,7 +7,7 @@ export default function EnterStudentCafeIntent(gameSession: GameSession, query: 
    const responseBuilder = new ResponseBuilder();
     
    responseBuilder.addMessage(getText("library_with_key"))
-   gameSession.helpText = "You enter the library. You have books which need returning. You can return the books or look for your laptop"
+   gameSession.helpText = "You enter the library. You have a book which needs to be returned. You can return the book or look for your laptop"
    
    return responseBuilder.build();
 }
