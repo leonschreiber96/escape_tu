@@ -1,11 +1,11 @@
 
 <speak>
     <par>
-    <media xml:id="standard_2">
+    <media xml:id="standard_2" end="speech.end+3s">
         <audio src="https://sndup.net/29fh/d"> </audio>
     </media>
 
-    <media xml:id="zombies" begin="3s">
+    <media xml:id="zombies" begin="3s" end="speech.end+3s">
         <audio src="https://www.sndup.net/nsbp/d" soundLevel="-30dB"> </audio>
     </media>
 

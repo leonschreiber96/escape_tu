@@ -1,10 +1,10 @@
 <speak>
     <par>
-    <media xml:id="standard_sound" soundLevel="20dB">
+    <media xml:id="standard_sound" soundLevel="20dB" end="speech.end+3s">
         <audio src="https://www.sndup.net/ty2r/d"> </audio>
     </media>
 
-    <media xml:id="zombies">
+    <media xml:id="zombies" end="speech.end+3s">
         <audio src="https://www.sndup.net/nsbp/d" soundLevel="-30dB"> </audio>
     </media>
 

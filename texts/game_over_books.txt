@@ -1,6 +1,6 @@
 <speak>
     <par>
-    <media xml:id="standard_sound" soundLevel="20dB">
+    <media xml:id="standard_sound" soundLevel="20dB" end="speech2.end+3s">
         <audio src="https://www.sndup.net/ty2r/d"> </audio>
     </media>
 
