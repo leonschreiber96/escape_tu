@@ -9,7 +9,7 @@
             <voice name="en-US-Wavenet-C">
                 <prosody rate="medium" pitch="+1st" volume="-5.0dB">
                     You gather your things and quickly leave campus, free from further disturbances. 
-                    Finally you can leave this odyssey behind. <break time="500ms"/>
+                    Finally you can leave this odyssey behind.
 
                     Thank you for playing the game. 
                     Do you want to restart?

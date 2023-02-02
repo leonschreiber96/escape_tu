@@ -16,9 +16,6 @@
                </prosody>
 
             </voice>
-    
-
-            </break time="2s">
 
             <voice name="en-US-Wavenet-C">
                <prosody rate="medium" pitch="+1st" volume="-5.0dB">
