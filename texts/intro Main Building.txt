@@ -6,7 +6,7 @@
     </media>
 
     <media xml:id="Door_3">
-        <audio src="https://sndup.net/m577/d" soundlevel="-5db"> </audio>
+        <audio src="https://sndup.net/m577/d" soundlevel="-12db"> </audio>
     </media>
 
     <media xml:id="speech" begin="Door_3.end +1s">

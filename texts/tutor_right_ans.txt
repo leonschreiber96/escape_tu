@@ -11,7 +11,7 @@
             <voice name="en-AU-Wavenet-D">
                <prosody rate="medium" pitch="+2.4st" volume="-2.0dB">
                 
-                 <say-as interpret-as="expletive">Fuck!</say-as> Yeeaah!! You are the chosen one!!
+                  Fuck Yeah!! You are the chosen one!!
 
                </prosody>
 
