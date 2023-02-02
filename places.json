@@ -81,7 +81,7 @@
       ],
       "actions": [
          "Talk to the doorkeeper",
-         "Go to the Audimax"
+         "Go to the lecture hall"
       ]
    },
    {
@@ -138,7 +138,7 @@
       ],
       "actions": [
          "Search for a tutor",
-         "Talk to the cashier"
+         "Talk to the lunch lady"
       ]
    }
 ]
